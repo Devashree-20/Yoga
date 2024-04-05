@@ -44,10 +44,10 @@ $(window).load(function(){
   <div class="bg-img"></div>
   <!--==============================header=================================-->
    <header>
-    <h1><a href="{% url 'index' %}">Yoga Paradise  <strong>Studio.</strong></a></h1>
-    <nav>
-      <!-- Navigation menu with login/logout/signup links -->
-      <ul class="menu">
+    <h1><a href="{% url 'index' %}">Yoga Paradise <strong>Studio.</strong></a></h1>
+<nav>
+    <!-- Navigation menu with login/logout/signup links -->
+    <ul class="menu">
         <li class="current"><a href="{% url 'index' %}">About</a></li>
         <li><a href="{% url 'trainings' %}">Yoga Therapy</a></li>
         <li><a href="{% url 'timetable' %}">Timetable</a></li>
@@ -56,13 +56,15 @@ $(window).load(function(){
         {% if user.is_authenticated %}
             <li><a href="{% url 'logout' %}">Logout</a></li>
             <li><a href="#">{{ user.username }}</a></li>
+            <!-- Display booked sessions -->
+            <li><a href="{% url 'user_sessions' %}">Your Sessions</a></li>
         {% else %}
             <li><a href="{% url 'login' %}">Login</a></li>
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
         {% endif %}
-      </ul>
-    </nav>
-  </header>
+    </ul>
+</nav>
+</header>
   <!--==============================content================================-->
   <section id="content">
       <div class="grid_12 top-1">
