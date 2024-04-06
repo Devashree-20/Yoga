@@ -12,7 +12,7 @@ phases:
     commands:
       - python --version
       - pylint $CODEBUILD_SRC_DIR/*.py
-      - pylint $CODEBUILD_SRC_DIR/yoga/*.py
+      - pylint $CODEBUILD_SRC_DIR/YOGA/*.py
 artifacts:
   files:
     - '**/*'
