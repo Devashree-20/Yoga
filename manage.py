@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'YOGA.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'yoga.settings')
     try:
         from django.core.management import execute_from_command_line # pylint: disable=import-outside-toplevel
     except ImportError as exc:
