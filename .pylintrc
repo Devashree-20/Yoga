@@ -1,4 +1,1 @@
-[FORMAT]
- 
-# Disable snake_case naming convention
-disabled = C0103
+# Disable snake_case naming convention disabled = C0103
